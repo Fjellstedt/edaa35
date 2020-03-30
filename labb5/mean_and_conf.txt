@@ -1,0 +1,79 @@
+Med JIT
+    10:
+        Mean:
+            171693.117264957
+        Conf:
+            "lower",166239.341198548
+            "upper",177146.893331367
+    
+    100:
+        Mean:
+            170474.259692308
+            
+        Conf:
+            "lower",168822.023550697
+            "upper",172126.495833919
+            
+Utan JIT
+    10:
+        Mean:
+            976071.898803419
+        Conf:
+            "lower",972234.699134124
+            "upper",979909.098472714
+            
+    100:
+        Mean:
+            973889.606017094
+        Conf:
+            "lower",973088.415248802
+            "upper",974690.796785386
+            
+Egen sortering
+    10:
+        Mean:
+            393440.054700855
+            
+        Conf:
+            "lower",387796.338211733
+            "upper",399083.771189977
+            
+    100:
+        Mean:
+            394721.647589744
+        
+        Conf:
+            "lower",392940.760536588
+            "upper",396502.534642899
+            
+T-test
+data1.txt
+
+        Welch Two Sample t-test
+
+            data:  data3 and data1
+
+            t = 8.4404, df = 1129.9, p-value < 2.2e-16
+            alternative hypothesis: true difference in means is not equal to 0
+            95 percent confidence interval:
+             178700.5 286944.3
+            sample estimates:
+            mean of x mean of y
+            404375.7  171553.3
+data2.txt
+
+        Welch Two Sample t-test
+
+            data:  data3 and data1
+            t = -0.52608, df = 840.05, p-value = 0.599
+            alternative hypothesis: true difference in means is not equal to 0
+            95 percent confidence interval:
+             -62113.42  35855.26
+            sample estimates:
+            mean of x mean of y
+             435885.5  449014.6
+
+
+Kap 7.
+Overleaf.
+2/3 klagar, ändra.

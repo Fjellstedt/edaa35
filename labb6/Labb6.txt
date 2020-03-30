@@ -1,0 +1,25 @@
+Labb 6:
+3)
+	Rand.java
+	Klass: Rand.
+
+4)
+	metoder: simulate, handleevent
+	klass: Hospital.
+
+5)
+Packet:
+	Simulation:
+		Ca: 5
+		Ce: 2
+		I: 0.285
+		A: 0.25
+		D: 1/sqrt(2) * (0.285 + 0.25 - 1)
+	Hospital:
+		Ca: 0
+		Ce: 6
+		I: 1
+		A: 0 (0/7)
+		D: 0
+
+	
