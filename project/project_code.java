@@ -81,42 +81,42 @@ class Project
                 PrintWriter fileW = new PrintWriter(new FileOutputStream(args[1], false));
                 Integer amountOfTimes = Integer.parseInt(args[2]);
                 String testType = args[3];
-				System.out.println(testType);
-				LinkedList<Integer> original = new LinkedList<Integer>();
-				while(fileR.hasNext())
-				{
-					Integer val = fileR.nextInt();
-					original.add(val);
-				}
-				
-				// NOTE(pf): i for insertion...
-				if(testType.equals("i"))
-				{
-					for(int i = 0; i < amountOfTimes; ++i)
-					{
-						Integer[] array = original.toArray(new Integer[original.size()]);
-						long t0 = System.nanoTime();
-						insertionSort(array);
-						//ValidityTest(array);
-						long t1 = System.nanoTime();
-						fileW.println((t1 - t0));
-					}
-				}
-				// NOTE(pf): .. and m for merge.
-				else if(testType.equals("m"))
-				{
-					for(int i = 0; i < amountOfTimes; ++i)
-					{
-						Integer[] array = original.toArray(new Integer[original.size()]);
-						long t0 = System.nanoTime();
-						mergeSort(array);
-						//ValidityTest(array);
-						long t1 = System.nanoTime();
-						fileW.println((t1 - t0));
-					}
-				}
-				fileW.flush();
-				fileW.close();
+		System.out.println(testType);
+		LinkedList<Integer> original = new LinkedList<Integer>();
+		while(fileR.hasNext())
+		{
+			Integer val = fileR.nextInt();
+			original.add(val);
+		}
+
+		// NOTE(pf): i for insertion...
+		if(testType.equals("i"))
+		{
+			for(int i = 0; i < amountOfTimes; ++i)
+			{
+				Integer[] array = original.toArray(new Integer[original.size()]);
+				long t0 = System.nanoTime();
+				insertionSort(array);
+				//ValidityTest(array);
+				long t1 = System.nanoTime();
+				fileW.println((t1 - t0));
+			}
+		}
+		// NOTE(pf): .. and m for merge.
+		else if(testType.equals("m"))
+		{
+			for(int i = 0; i < amountOfTimes; ++i)
+			{
+				Integer[] array = original.toArray(new Integer[original.size()]);
+				long t0 = System.nanoTime();
+				mergeSort(array);
+				//ValidityTest(array);
+				long t1 = System.nanoTime();
+				fileW.println((t1 - t0));
+			}
+		}
+		fileW.flush();
+		fileW.close();
             }
         }
         catch(Exception e)
