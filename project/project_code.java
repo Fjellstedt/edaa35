@@ -13,7 +13,7 @@ class Project
 			assert i == array[i] : "Should be the same";
 		}
 	}
-	
+
 	private static void insertionSort(Integer[] array)
 	{
 		for(int i = 1; i < array.length; ++i)
@@ -28,7 +28,7 @@ class Project
 			array[pos] = val;
 		}
 	}
-	
+
 	private static void merge(Integer[] output, Integer[] left, Integer[] right)
 	{
 		int i = 0;
@@ -55,7 +55,7 @@ class Project
 			output[k++] = right[j++];
 		}
 	}
-	
+
 	private static void mergeSort(Integer[] array)
 	{
 		if(array.length > 1)
@@ -72,15 +72,15 @@ class Project
 	}
 	
 	public static void main(String args[])
-    {
-        try
-        {
-            if(args.length == 4)
-            {
-                Scanner fileR = new Scanner(new File(args[0]));
-                PrintWriter fileW = new PrintWriter(new FileOutputStream(args[1], false));
-                Integer amountOfTimes = Integer.parseInt(args[2]);
-                String testType = args[3];
+	{
+	try
+	{
+	    if(args.length == 4)
+	    {
+		Scanner fileR = new Scanner(new File(args[0]));
+		PrintWriter fileW = new PrintWriter(new FileOutputStream(args[1], false));
+		Integer amountOfTimes = Integer.parseInt(args[2]);
+		String testType = args[3];
 		System.out.println(testType);
 		LinkedList<Integer> original = new LinkedList<Integer>();
 		while(fileR.hasNext())
@@ -117,11 +117,11 @@ class Project
 		}
 		fileW.flush();
 		fileW.close();
-            }
-        }
-        catch(Exception e)
-        {
-            System.out.println("Error: " + e.toString());
-        }
-    }
+	    }
+	}
+	catch(Exception e)
+	{
+	    System.out.println("Error: " + e.toString());
+	}
+	}
 }
